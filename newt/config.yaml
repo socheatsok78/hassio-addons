@@ -9,6 +9,7 @@ arch:
   - aarch64
   - amd64
 init: false
+hassio_api: true
 host_network: true
 options:
   pangolin_endpoint: "https://pangolin.fossorial.io"
