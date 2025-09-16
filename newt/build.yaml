@@ -9,4 +9,5 @@ labels:
   org.opencontainers.image.source: "https://github.com/socheatsok78/hassio-addons"
   org.opencontainers.image.licenses: "Apache License 2.0"
 args:
+  NEWT_VERSION: "1.4.4"
   TEMPIO_VERSION: "2021.09.0"
