@@ -1,7 +1,8 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
 ARG BUILD_FROM
+ARG NEWT_VERSION=1.4.4
 
-FROM fosrl/newt AS binary
+FROM fosrl/newt:${NEWT_VERSION} AS binary
 
 FROM $BUILD_FROM
 
