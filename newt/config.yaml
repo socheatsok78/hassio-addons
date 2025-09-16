@@ -15,6 +15,6 @@ options:
   pangolin_endpoint: "https://pangolin.fossorial.io"
 schema:
   pangolin_endpoint: "str?"
-  newt_id: "str?"
-  newt_secret: "str?"
+  newt_id: "password"
+  newt_secret: "password"
 image: "ghcr.io/socheatsok78/hassio-addon-newt-{arch}"
