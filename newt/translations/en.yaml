@@ -1,0 +1,10 @@
+configuration:
+  pangolin_endpoint:
+    name: Pangolin Endpoint URL
+    description: The Pangolin endpoint URL to connect to.
+  newt_id:
+    name: Newt ID
+    description: The Newt ID for authentication.
+  newt_secret:
+    name: Newt Secret Key
+    description: The Newt secret key for authentication.
