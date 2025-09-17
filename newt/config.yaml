@@ -13,8 +13,10 @@ hassio_api: true
 host_network: true
 options:
   pangolin_endpoint: "https://pangolin.fossorial.io"
+  accept_clients: false
 schema:
   pangolin_endpoint: "str?"
   newt_id: "password"
   newt_secret: "password"
+  accept_clients: "bool?"
 image: "ghcr.io/socheatsok78/hassio-addon-newt-{arch}"

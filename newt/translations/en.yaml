@@ -8,3 +8,6 @@ configuration:
   newt_secret:
     name: Newt Secret Key
     description: The Newt secret key for authentication.
+  accept_clients:
+    name: Accept Client Connections
+    description: Allow other devices to connect through this Newt instance as a gateway using clients.
