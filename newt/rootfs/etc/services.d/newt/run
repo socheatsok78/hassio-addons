@@ -4,8 +4,6 @@ PANGOLIN_ENDPOINT=$(bashio::config 'pangolin_endpoint')
 NEWT_ID=$(bashio::config 'newt_id')
 NEWT_SECRET=$(bashio::config 'newt_secret')
 
-export PANGOLIN_ENDPOINT
-export NEWT_ID
-export NEWT_SECRET
-
+# Launch Newt
+export PANGOLIN_ENDPOINT NEWT_ID NEWT_SECRET
 exec /usr/local/bin/newt
