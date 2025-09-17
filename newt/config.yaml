@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Newt
-version: "1.4.4"
+version: "1.4.4-1"
 slug: newt
 description: A tunneling client for Pangolin
 url: "https://github.com/socheatsok78/hassio-addons/tree/main/newt"
