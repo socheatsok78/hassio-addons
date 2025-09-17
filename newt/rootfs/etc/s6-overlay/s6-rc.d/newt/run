@@ -1,5 +1,6 @@
 #!/usr/bin/with-contenv bashio
 
+# Declare variables
 PANGOLIN_ENDPOINT=$(bashio::config 'pangolin_endpoint')
 NEWT_ID=$(bashio::config 'newt_id')
 NEWT_SECRET=$(bashio::config 'newt_secret')
