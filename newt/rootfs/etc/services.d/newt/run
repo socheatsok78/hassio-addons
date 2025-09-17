@@ -1,10 +1,5 @@
 #!/usr/bin/with-contenv bashio
-# ==========================================================================================================================================
 
-# Declare variables
-declare PANGOLIN_ENDPOINT NEWT_ID NEWT_SECRET
-
-## Get the 'message' key from the user config options.
 PANGOLIN_ENDPOINT=$(bashio::config 'pangolin_endpoint')
 NEWT_ID=$(bashio::config 'newt_id')
 NEWT_SECRET=$(bashio::config 'newt_secret')
@@ -13,5 +8,4 @@ export PANGOLIN_ENDPOINT
 export NEWT_ID
 export NEWT_SECRET
 
-## Run your program
 exec /usr/local/bin/newt
