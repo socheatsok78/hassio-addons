@@ -8,6 +8,21 @@ configuration:
   newt_secret:
     name: Newt Secret Key
     description: The Newt secret key for authentication.
+  mtu:
+    name: MTU Size
+    description: The Maximum Transmission Unit (MTU) size for the Newt tunnel.
+  dns:
+    name: DNS Server
+    description: The DNS server to use for the Newt tunnel.
   accept_clients:
     name: Accept Client Connections
     description: Allow other devices to connect through this Newt instance as a gateway using clients.
+  ping_interval:
+    name: Ping Interval
+    description: Interval for pinging the server (default 3s)
+  ping_timeout:
+    name: Ping Timeout
+    description: meout for each ping (default 5s)
+  log_level:
+    name: Log Level
+    description: Set the logging level for the Newt client.

@@ -1,10 +1,16 @@
 #!/usr/bin/with-contenv bashio
+# shellcheck disable=SC2155
 
 # Declare variables
-PANGOLIN_ENDPOINT=$(bashio::config 'pangolin_endpoint')
-NEWT_ID=$(bashio::config 'newt_id')
-NEWT_SECRET=$(bashio::config 'newt_secret')
+export PANGOLIN_ENDPOINT=$(bashio::config 'pangolin_endpoint')
+export NEWT_ID=$(bashio::config 'newt_id')
+export NEWT_SECRET=$(bashio::config 'newt_secret')
+export MTU=$(bashio::config 'mtu')
+export DNS=$(bashio::config 'dns')
+export ACCEPT_CLIENTS=$(bashio::config 'ACCEPT_CLIENTS')
+export PING_INTERVAL=$(bashio::config 'ping_interval')
+export PING_TIMEOUT=$(bashio::config 'ping_timeout')
+export LOG_LEVEL=$(bashio::config 'log_level')
 
 # Launch Newt
-export PANGOLIN_ENDPOINT NEWT_ID NEWT_SECRET
 exec /usr/local/bin/newt
