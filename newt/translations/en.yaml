@@ -22,7 +22,7 @@ configuration:
     description: Interval for pinging the server (default 3s)
   ping_timeout:
     name: Ping Timeout
-    description: meout for each ping (default 5s)
+    description: Timeout for each ping (default 5s)
   log_level:
     name: Log Level
     description: Set the logging level for the Newt client.
