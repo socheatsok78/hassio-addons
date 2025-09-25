@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Newt
-version: "1.5.0-1"
+version: "1.5.0-2"
 slug: newt
 description: A tunneling client for Pangolin
 url: "https://github.com/socheatsok78/hassio-addons/tree/main/newt"
@@ -16,8 +16,8 @@ options:
   mtu: 1280
   dns: "9.9.9.9"
   accept_clients: false
-  ping_interval: 3
-  ping_timeout: 5
+  ping_interval: 3s
+  ping_timeout: 5s
   log_level: INFO
 schema:
   pangolin_endpoint: "url?"
@@ -26,7 +26,7 @@ schema:
   mtu: "int?"
   dns: "str?"
   accept_clients: "bool?"
-  ping_interval: "int?"
-  ping_timeout: "int?"
+  ping_interval: "str?"
+  ping_timeout: "str?"
   log_level: list(DEBUG|INFO|WARN|ERROR|FATAL)
 image: "ghcr.io/socheatsok78/hassio-addon-newt-{arch}"
